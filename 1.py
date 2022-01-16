@@ -24,11 +24,16 @@
 # e = numpy.var(c)
 # print(e)
 
+# import numpy
+
+# a = [5, 31, 43, 48, 50, 41, 7, 11, 15, 39, 80, 82, 32, 2, 8, 6, 25, 36, 27, 61, 31]
+# b = numpy.percentile(a, 75)
+# print(b)
+
+# c = numpy.percentile(a, 90)
+# print(c)
+
 import numpy
 
-a = [5, 31, 43, 48, 50, 41, 7, 11, 15, 39, 80, 82, 32, 2, 8, 6, 25, 36, 27, 61, 31]
-b = numpy.percentile(a, 75)
-print(b)
-
-c = numpy.percentile(a, 90)
-print(c)
+a = numpy.random.uniform(0.0, 5.0, 250)
+print(a)
