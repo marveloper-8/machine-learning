@@ -42,9 +42,17 @@
 # plt.show()
 
 import matplotlib.pyplot as plt
+from scipy import stats
 
 a = [5, 7, 8, 7, 2, 17, 2, 9, 4, 11, 12, 9, 6]
 b = [99, 86, 87, 88, 111, 86, 103, 87, 94, 78, 77, 85, 86]
 
+slope, intercept, r, p, std_err = stats.linregress(a, b)
+def c(d):
+    return slope * d + intercept
+
+e = list(map(c, a))
+
 plt.scatter(a, b)
+plt.plot(a, e)
 plt.show()
