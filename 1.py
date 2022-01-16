@@ -33,10 +33,18 @@
 # c = numpy.percentile(a, 90)
 # print(c)
 
-import numpy
+# import numpy
+# import matplotlib.pyplot as plt
+
+# a = numpy.random.normal(0.0, 5.0, 100000)
+
+# plt.hist(a, 100)
+# plt.show()
+
 import matplotlib.pyplot as plt
 
-a = numpy.random.normal(0.0, 5.0, 100000)
+a = [5, 7, 8, 7, 2, 17, 2, 9, 4, 11, 12, 9, 6]
+b = [99, 86, 87, 88, 111, 86, 103, 87, 94, 78, 77, 85, 86]
 
-plt.hist(a, 5)
+plt.scatter(a, b)
 plt.show()
