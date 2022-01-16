@@ -36,7 +36,7 @@
 import numpy
 import matplotlib.pyplot as plt
 
-a = numpy.random.uniform(0.0, 5.0, 100000)
+a = numpy.random.normal(0.0, 5.0, 100000)
 
 plt.hist(a, 5)
 plt.show()
